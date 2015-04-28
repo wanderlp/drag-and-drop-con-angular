@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app='DemoDragAndDrop'>
+  <head>
+    <meta charset="utf-8">
+    <title>Drag and Drop Con Angular</title>
+	<link href="style.css" rel="stylesheet" />
+	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
+	<script src="app.js"></script>
+  </head>
+  <body ng-controller='DemoCtrl'>
+    <div class="row">
+      <div class="col-sm-8">
+        <h5>Arrastre los elementos disponibles hacia la siguiente l&iacute;nea:</h5>
+        <img id="{{el.id}}" class="draggable" ng-repeat="el in resultado" droppable-area src="{{el.avatar}}" draggable-thing />
+      <div class="col-sm-4">
+        <h5>Elementos Disponibles</h5>
+        <div id="{{el.id}}" class="draggable" ng-repeat="el in disponible" droppable-area draggable="true" draggable-thing>
+          <img id="{{el.id}}" src="{{el.avatar}}" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

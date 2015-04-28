@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana;
+    text-align: center;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+.draggable {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    border: 1px solid #aaaaaa;
+    padding: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin: 5px;
+}
